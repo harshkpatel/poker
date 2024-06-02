@@ -9,4 +9,10 @@ add_executable(poker
         user.cpp
         user.h
         player.h
-        player.cpp)
+        player.cpp
+        value.h
+        card.h
+        suit.h
+        card.cpp
+        deck.h
+        deck.cpp)

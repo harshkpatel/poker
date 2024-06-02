@@ -5,8 +5,7 @@
 #include "player.h"
 Player::Player(){
     this->balance = 0;
-    this->hand[0] = 0;
-    this->hand[1] = 0;
+    this->hand = vector<Card>();
     this->bankrupt = false;
 }
 void Player::updateBal(int amount){
@@ -15,7 +14,7 @@ void Player::updateBal(int amount){
 int Player::getBal() const{
     return this->balance;
 }
-void Player::getCards(int card1, int card2){
+void Player::getCards(Card card1, Card card2){
     this->hand[0] = card1;
     this->hand[1] = card2;
 }
